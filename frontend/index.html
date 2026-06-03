@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<title>MARA - Multi Agent Research Assistant</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+rel="stylesheet"
+/>
+
+</head>
+
+<body>
+
+<div class="blob blob1"></div>
+<div class="blob blob2"></div>
+
+<div class="grid-bg"></div>
+
+<div class="container">
+
+<nav class="navbar">
+
+<div class="logo">
+🧠 MARA
+</div>
+
+<div class="nav-links">
+<a href="#">Dashboard</a>
+<a href="#">Research</a>
+<a href="#">Reports</a>
+<a href="#">About</a>
+</div>
+
+</nav>
+
+<header class="hero">
+
+<h1>
+<i class="fas fa-brain"></i>
+Multi-Agent Research Assistant
+</h1>
+
+<p>
+Autonomous Scientific Discovery Platform Powered By AI Agents
+</p>
+
+<div class="hero-buttons">
+<button class="secondary-btn">
+<i class="fas fa-book"></i>
+Documentation
+</button>
+
+<button class="secondary-btn">
+<i class="fas fa-chart-line"></i>
+Analytics
+</button>
+</div>
+
+</header>
+
+<div class="stats">
+
+<div class="stat-card">
+<h2>7</h2>
+<span>AI Agents</span>
+</div>
+
+<div class="stat-card">
+<h2>2.3M+</h2>
+<span>Papers Indexed</span>
+</div>
+
+<div class="stat-card">
+<h2>97%</h2>
+<span>Success Rate</span>
+</div>
+
+<div class="stat-card">
+<h2>24/7</h2>
+<span>Automation</span>
+</div>
+
+</div>
+
+<div class="dashboard">
+
+<div class="left-panel">
+
+<<div class="glass-card">
+
+<h2>Workflow Status</h2>
+
+<div id="agent1" class="agent-step waiting">
+🧠 Topic Refiner
+</div>
+
+<div id="agent2" class="agent-step waiting">
+📚 Paper Discovery
+</div>
+
+<div id="agent3" class="agent-step waiting">
+🌐 Web Researcher
+</div>
+
+<div id="agent4" class="agent-step waiting">
+💡 Insight Synthesizer
+</div>
+
+<div id="agent5" class="agent-step waiting">
+🔍 Gap Analyzer
+</div>
+
+<div id="agent6" class="agent-step waiting">
+📊 Research Evaluator
+</div>
+
+<div id="agent7" class="agent-step waiting">
+📝 Report Compiler
+</div>
+
+</div>
+
+<div class="glass-card activity-card">
+
+<h2>Live Activity</h2>
+
+<div id="activity">
+
+<div class="activity-line">
+Waiting for research request...
+</div>
+
+</div>
+
+</div>
+
+<div class="glass-card history-card">
+
+<h2>Recent Research</h2>
+
+<div class="history-item">
+AI Drug Discovery
+</div>
+
+<div class="history-item">
+Quantum Computing
+</div>
+
+<div class="history-item">
+Autonomous Scientific Discovery
+</div>
+
+</div>
+
+</div>
+
+<div class="right-panel">
+
+<div class="glass-card">
+
+<h2>Research Topic</h2>
+
+<textarea
+id="topic"
+placeholder="Enter your research topic..."
+></textarea>
+
+<button onclick="runResearch()">
+🚀 Generate Research
+</button>
+
+<div id="status"></div>
+
+</div>
+
+<div class="glass-card report-card">
+
+<div class="report-header">
+
+<h2>Generated Report</h2>
+
+<div class="report-actions">
+
+    <button id="copyBtn" title="Copy Report">
+        <i class="fas fa-copy"></i>
+    </button>
+
+    <button id="downloadBtn" title="Download TXT">
+        <i class="fas fa-download"></i>
+    </button>
+
+    <button id="pdfBtn" title="Download PDF">
+        <i class="fas fa-file-pdf"></i>
+    </button>
+
+</div>
+
+<div id="report">
+Research output will appear here...
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
